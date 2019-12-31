@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Steps
+
 ## Install dependencies
 
 ### `yarn`
@@ -18,7 +20,7 @@ In the project directory, you can run:
 
 ### `yarn run build:backend`
 
-Creates the build of project. Do create the build before starting the server
+Creates the build of backend . Do create the build before starting the server
 
 ### `yarn run dev`
 
