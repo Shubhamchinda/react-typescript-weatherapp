@@ -7,7 +7,6 @@ let authAxios = axios.create({
 });
 class Request {
   getWeather(data: any) {
-    console.log(data, "REQUEST");
     return new Promise((next, error) => {
       authAxios
         .get("/api", { params: { ...data } })

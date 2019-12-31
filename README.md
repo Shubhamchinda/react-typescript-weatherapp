@@ -1,12 +1,58 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Install dependencies
+
+### `yarn`
+
+Install node modules for frontend support
+
+## Install Backend dependencies
+* ### `cd backend`
+* ### `npm install`
+
+    Install node modules for backend support
+
 ## Available Scripts
 
 In the project directory, you can run:
 
+### `yarn run build:backend`
+
+Creates the build of project. Do create the build before starting the server
+
+### `yarn run dev`
+
+Runs the backend and frontend server simultaneously.<br />
+Open [http://localhost:3000](http://localhost:3000) to view frontend in the browser.
+Open [http://localhost:5000](http://localhost:5000) to view frontend in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
+
+# `Navigate to Backend folder`
+## `cd backend`
+
+Navigates to backend server folder
+
+### `npm run build`
+
+Creates the build of project. Do create the build before starting the server
+
+
+### `npm start`
+
+Runs the backend server in development mode
+Open [http://localhost:3000](http://localhost:5000) to view frontend in the browser.
+
+### `npm run dev`
+
+Runs the backend server in development mode with typescript conversion. Watches typescript changes
+
+# Frontend commands only
+
 ### `yarn start`
 
-Runs the app in the development mode.<br />
+Runs the app in the frontend development mode only.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />

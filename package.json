@@ -24,6 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "dev": "concurrently \"cd backend && npm start \"  \"yarn start\" ",
+    "build:backend": "concurrently \"cd backend && npm run build \"",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

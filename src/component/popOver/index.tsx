@@ -16,10 +16,6 @@ export default function SimplePopover(props: any) {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState<any>(null);
 
-  //   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-  //     setAnchorEl(event.currentTarget);
-  //   };
-
   useEffect(() => {
     const { show } = props;
     setAnchorEl(show);

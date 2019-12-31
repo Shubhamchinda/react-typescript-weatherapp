@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme: Theme) =>
       margin: "100px 100px 100px 100px",
       padding: "50px 50px 50px 50px",
       minWidth: 500,
-      minHeight: 400,
+      minHeight: 350,
       justifyContent: "center",
       boxShadow: "5px 10px 10px 5px rgba(0,0,0,0.2)"
     },
