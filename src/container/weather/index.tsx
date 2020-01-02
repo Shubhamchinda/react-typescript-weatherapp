@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
     width: "50%"
   },
   tempButton: {
-    margin: "5px 5px 5px 5px",
+    margin: "5px 5px 5px 5px"
   }
 }));
 
@@ -41,7 +41,10 @@ const Weather: React.FC<Props> = () => {
       setLoading(true);
 
       const data: any = await Request.getWeather({ city: selCity });
-      let currentTemp = data && data.current_observation.condition.temperature;
+      let currentTemp =
+        data &&
+        data.current_observation.condition &&
+        data.current_observation.condition.temperature;
       setLoading(false);
       setTemp(currentTemp);
       setShowTemp(currentTemp);
@@ -88,7 +91,18 @@ const Weather: React.FC<Props> = () => {
               disabled={farButton}
               className={classes.tempButton}
             >
-              {farButton ? <u><strong><b>F</b></strong></u> : 'F'}
+              {farButton ? (
+                <>
+                  <u>
+                    <strong>
+                      <b>F</b>
+                    </strong>
+                  </u>{" "}
+                  *
+                </>
+              ) : (
+                "F"
+              )}
             </Button>
             /
             <Button
@@ -98,7 +112,18 @@ const Weather: React.FC<Props> = () => {
               disabled={!farButton}
               className={classes.tempButton}
             >
-              {!farButton ? <u><strong><b>C</b></strong></u> : 'C'}
+              {!farButton ? (
+                <>
+                  <u>
+                    <strong>
+                      <b>C</b>
+                    </strong>
+                  </u>{" "}
+                  *
+                </>
+              ) : (
+                "C"
+              )}
             </Button>
           </h2>
         </>
