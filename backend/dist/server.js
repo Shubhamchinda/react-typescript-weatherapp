@@ -9,7 +9,7 @@ const app_1 = __importDefault(require("./app"));
  * Error Handler. Provides full stack - remove for production
  */
 app_1.default.use(errorhandler_1.default());
-const server = app_1.default.listen(5000, () => {
+const server = app_1.default.listen(process.env.PORT || 5000, () => {
     console.log("App is running at 5000 in");
     console.log("  Press CTRL-C to stop\n");
 });
